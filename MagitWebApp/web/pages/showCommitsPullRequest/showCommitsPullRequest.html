@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../common/jquery-2.0.3.min.js"></script>
+    <script src="../../common/context-path-helper.js"></script>
+    <script src="showCommitsPullRequest.js"></script>
+
+    <style>li {white-space: nowrap;}
+    table, th, td{
+        border: 1px solid #000000;
+    }
+    </style>
+
+</head>
+<body>
+<div>
+<table id="commitList"> </table>
+
+</div>
+
+<div id="delta">
+    <h4 id="deletedTitle"></h4>
+    <ul id="deletedfiles"></ul>
+
+    <h4 id="changedTitle"></h4>
+    <ul id="changedfiles"></ul>
+
+    <h4 id="addedTitle"></h4>
+    <ul id="addedfiles"></ul>
+</div>
+
+<div>
+    <textarea id = "input_text_area" placeholder="Show content here" rows="4" cols="50">
+    </textarea>
+</div>
+<button type="button" id = back>back!</button>
+
+</body>
+</html>

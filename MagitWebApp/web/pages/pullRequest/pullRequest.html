@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../common/jquery-2.0.3.min.js"></script>
+    <script src="../../common/context-path-helper.js"></script>
+    <script src="pullRequest.js"></script>
+    <script src="../singleRepository/singleRepository.js"></script>
+
+</head>
+
+<body>
+<h1>Pull Request!</h1>
+
+Target branch name:<br>
+<form method="POST" action="pullRequest" id="pullrequestform">
+
+
+
+    <select id = targetbranches name="targetbranchesname" form="pullrequestform">
+    </select><br><br>
+
+
+    Base branch name:<br>
+    <select id = basebranches name="basebranchesname" form="pullrequestform">
+    </select>  <br><br>
+    Message for pull request:<br>
+    <textarea name="prMessage" id = "text_area" placeholder="Enter your message here" rows="4" cols="50" form="pullrequestform"></textarea>
+    <input type="submit" value="Send pull request">
+
+</form>
+<button type="button" id = backpr>back!</button>
+<div>
+    <h4 id="titleRTB"></h4>
+    <ul id="RTBlist">
+    </ul>
+</div>
+
+</body>
+</html>

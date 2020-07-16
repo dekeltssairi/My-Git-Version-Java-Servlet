@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="MagitWebApp:war3">
+    <output-path>$PROJECT_DIR$/out/artifacts/MagitWebApp_war3</output-path>
+    <root id="archive" name="MagitWebApp_war.war">
+      <element id="artifact" artifact-name="MagitWebApp:war exploded" />
+    </root>
+  </artifact>
+</component>

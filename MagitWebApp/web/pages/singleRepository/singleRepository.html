@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="../../common/jquery-2.0.3.min.js"></script>
+    <script src="../../common/context-path-helper.js"></script>
+    <script src="singleRepository.js"></script>
+    <link href="singleRepository.css" rel="stylesheet" type="text/css">
+    <link href="../../common/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div class="row" id="titleRow">
+    <div id="remoteTitle">
+        <h4 id="remoteDetails" ><label id="rrName"></label><br>
+            <label id="rrUsername"></label></h4>
+    </div>
+    <div>
+        <h1 id="title" style="color: #2b5a85; text-align: center; font-weight: bold" > </h1>
+    </div>
+    <div id="collabotationButtons" style="display: inline">
+        <button type="button" id = "wc"> WC!</button>
+        <button  type="button" id="commit">Commit!</button>
+        <button type="button" id = back>back!</button>
+        <h3 id="openChanged" style="color: #d40c11; display: inline;"></h3>
+        <div id="collabotation"></div>
+
+    </div>
+</div>
+
+<h3 style="margin-left: 10px;">Committs of head:</h3>
+
+<div class="row, middle">
+    <div id="commits">
+        <table id="commitList">
+        </table>
+    </div>
+    <div id="branchesArea">
+        <h4 id="branches">Branches:</h4>
+        <form id="addnewbranch" method="POST" action="addbranch">
+            <input type="text" id="branchname" name="branchname"><br>
+            <input type="submit" value="Add new branch"><br>
+        </form>
+        <ul id="brancheslist">
+        </ul>
+    </div>
+</div>
+
+<div class="row" id="msgRow">
+    <nav class="center" id="msgarea" style="overflow: auto;">
+    </nav>
+</div>
+
+</body>
+</html>

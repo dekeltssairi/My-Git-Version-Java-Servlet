@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="../../common/jquery-2.0.3.min.js"></script>
+    <script src="../../common/context-path-helper.js"></script>
+    <script src="wc.js?v=1"></script>
+    <link rel="stylesheet" type="text/css" href="wc.css">
+</head>
+<body>
+<div id="wcPage">
+
+    <div id="leftSide">
+        <h1>WC</h1>
+        <h2> Files </h2>
+        <div id = "files"></div>
+
+        <textarea id = "text_area" placeholder="Content file" rows="4" cols="50">
+</textarea>
+        <button type="button" id = change_button>Change!</button>
+<!--        <button type="button" id = back>back!</button>-->
+
+        <div>
+            <div class="input-group prefix">
+                <span id ="prefix"class="input-group-addon">Prefix</span>
+                <input id = "add_input" name="input" type="text"  />
+                <button type="button" id = "add">add!</button>
+            </div>
+            <div>
+            <textarea  id="input_text_area" placeholder="Add new file content here" rows="4" cols="50">
+</textarea>
+            </div>
+        </div>
+    </div>
+
+    <div id="openChanges">
+        <div id="deleted">
+            <h4 id="deletedTitle"></h4>
+            <ul id="deletedfiles"></ul>
+        </div>
+
+        <div id="changed">
+            <h4 id="changedTitle"></h4>
+            <ul id="changedfiles"></ul>
+        </div>
+
+        <div id="added">
+            <h4 id="addedTitle"></h4>
+            <ul id="addedfiles"></ul>
+        </div>
+        <button type="button" id = back style="float: right; margin-top: 200px">back!</button>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+    background-color: white;
+}
+
+table, th, td{
+    border: 1px solid #000000;
+}
+#remote {
+    color: #d43f3a;
+}
+#head{
+    color: #31b0d5;
+    font-weight: bold;
+    font-size: 20px;
+}
+#rtb{
+    color: seagreen;
+}
+#branches{
+    font-weight: bold;
+    font-size: 20px;
+    color: #2b5a85;
+}
+nav{
+    width: 95%;
+    height: 150px;
+    /*border: 2px solid black;*/
+    margin-bottom: 10px;
+}
+#msgarea{
+    white-space: pre-line;
+}
+#pointedBranchesColum{
+    max-height: 40px;
+    overflow: auto;
+}
+#commits{
+    max-height: 240px;
+    overflow: auto;
+    width: 75%;
+    float: left;
+    /*border: 2px solid black;*/
+
+}
+#branchesArea{
+    max-height: 240px;
+    width: 20%;
+    float: left;
+    margin-left: 5px;
+    /*border: 2px solid black;*/
+    overflow: auto;
+}
+
+.middle{
+    height: 40%;
+    margin-left: 10px ;
+    margin-right: 5px;
+}
+
+#msgRow{
+    width: 99%;
+    height: 30%;
+    margin-left: 1%;
+    margin-top: 10px;
+    overflow: auto;
+}
+
+
+#remoteTitle{
+    width: 30%;
+    /*border: 2px solid black;*/
+    display: inline;
+    float: left;
+
+}
+#title{
+    width: 40%;
+    /*border: 2px solid black;*/
+    display: inline;
+    float: left;
+
+}
+#collabotationButtons{
+    width: 30%;
+    /*border: 2px solid black;*/
+    display: inline;
+    float: left;
+
+}
+#titleRow{
+    width: 100%;
+    height: 20%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-align: left;
+}

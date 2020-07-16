@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>tutorial</title>
+
+	<script src="../../common/jquery-2.0.3.min.js"></script>
+	<script src="../../common/context-path-helper.js"></script>
+    <script src="UserDetails.js?V=1"></script>
+	<link href="UserDetails.css" rel="stylesheet" type="text/css">
+	<link href="../../common/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<div class="container">
+	<header>
+		<h1 id="titleMagit">Magit-hub</h1>
+	</header>
+	<nav>
+		<label>user Name: </label>
+		<label id ="name">
+		</label>
+
+		<br/>
+		<a href="../../chat/logout">Logout</a>
+
+	</nav>
+
+	<div class="content">
+		<div>
+		<h3>Select a File:</h3>
+		<form id="uploadForm" action="upload" enctype="multipart/form-data" method="POST">
+			<input type="file" name="file1"><br>
+			<input type="Submit" value="Upload File"><br>
+		</form>
+		</div>
+		<h4>Repositories</h4>
+			<table id="repositorieslist" class="replist">
+			</table>
+	</div>
+
+	<div class="center" id="msgarea">
+	</div>
+
+	<aside class="container-fluid">
+		<h4>Users:</h4>
+		<ul id="userslist">
+
+		</ul>
+	</aside>
+
+	<p class="clear">
+	</p>
+</div>
+</body>
+</html>

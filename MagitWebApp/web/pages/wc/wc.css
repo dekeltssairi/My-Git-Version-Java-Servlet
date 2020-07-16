@@ -1,0 +1,90 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.input-group{
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 40%;
+    margin-bottom: 0;
+    display: table-cell;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    margin: 0;
+}
+
+.row {
+    margin: 10px;
+}
+.input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.prefix input {
+    border-radius: 0px 4px 4px 0px;
+}
+
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+#leftSide {
+    width: 50%;
+    /*height: 500px;*/
+    height: auto;
+    overflow: auto;
+    float: left;
+    margin-right: 10px;
+}
+#wcPage{
+    overflow: auto;
+}
+#openChanges{
+    width: 40%;
+    /*height: 500px;*/
+    height: auto;
+    float: left;
+    margin-right: 10px;
+    /*overflow: auto;*/
+    /*border: 2px solid black;*/
+
+}
+#files{
+    max-height: 250px;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+#added, #deleted, #changed {
+    width: 30%;
+    height: 300px;
+    /*overflow: auto;*/
+    float: left;
+    margin-right: 10px;
+}
+/*}*/
+/*#deleted{*/
+/*    display: inline;*/
+/*}*/
+/*#changed{*/
+/*    display: inline;*/
+
+/*}*/
